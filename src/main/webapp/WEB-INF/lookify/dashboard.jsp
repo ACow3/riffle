@@ -9,7 +9,7 @@
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
-<link rel="stylesheet" href="css/main.css" type="text/css"/>
+<link rel="stylesheet" href="/css/main.css" type="text/css"/>
 <meta charset="UTF-8">
 <title>Dashboard</title>
 </head>
@@ -19,7 +19,7 @@
 		<!-- top navigation bar -->
 
 		<nav class="navbar navbar-expand-lg navbar-light bg-white mt-3 mb-3">
-			<a class="navbar-brand" href="/">Lookify</a>
+			<a class="navbar-brand" href="/">Riffle</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarTogglerDemo02"
 				aria-controls="navbarTogglerDemo02" aria-expanded="false"
