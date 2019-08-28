@@ -73,7 +73,7 @@
 						<h4 class="card-title">
 							<a href="#">Year: Year of Song</a>
 						</h4>
-						<p class="card-text">Maybe some info about this song &/or album and and image above of artist. Perhaps a player?</p>
+						<p class="card-text">Maybe some info about this song &/or album and image above of artist. Perhaps a player?</p>
 					</div>
 				</div>
 			</div>

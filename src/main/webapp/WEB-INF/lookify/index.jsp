@@ -83,7 +83,7 @@
 				<div class="col-lg-6 order-lg-1">
 					<div class="p-5">
 						<h2 class="display-4">Hip-Hop & R&B</h2>
-						<p>Developed in inner-city America by African American and Latino Americans, this rhythmic music style and moves the culture forward. From Drake, Cardi B. and Lil Wayne to Daniel Cesar, Khalid and Kehlani. Find the best Hip-Hop & R&B of today.</p>
+						<p>Developed in inner-city America by African American and Latino Americans, this rhythmic music style and corresponding lifestyle moves the culture forward. From Drake, Cardi B. and Lil Wayne to Daniel Cesar, Khalid and Kehlani. Find the best Hip-Hop & R&B of today.</p>
 					</div>
 				</div>
 			</div>
