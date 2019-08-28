@@ -81,8 +81,11 @@ public class LookifyController {
 	// renders artist search page
 	@GetMapping("/search")
 	public String findByArtist(Model model, @RequestParam(value="search") String artist) {
-		List<Lookify> artistSongs = lookifyService.findSongsByArtist(artist);
+		List<Lookify> artistSongs = lookifyService.findSongsByArtist(artist);		
 		model.addAttribute("artistSongs", artistSongs);
+		model.addAttribute("artist", artist);
 		return "lookify/search.jsp";
 	}
+	
+	
 }

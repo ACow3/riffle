@@ -13,9 +13,27 @@
 <meta charset="UTF-8">
 <title>Dashboard</title>
 <!-- Bootstrap core CSS -->
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <link href="/css/bootstrap.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+	crossorigin="anonymous"></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	crossorigin="anonymous"></script>
 <link href="/css/main.css" rel="stylesheet">
-
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.carousel').carousel({
+			interval : 4000
+		})
+	});
+</script>
 </head>
 <body>
 	<div class="mastercontainer">
@@ -23,8 +41,9 @@
 
 			<!-- top navigation bar -->
 
-			<nav class="navbar nav-dash navbar-expand-lg navbar-custom bg-black mt-3 mb-3">
-				<a class="navbar-brand" href="/">Riffle</a>
+			<nav
+				class="navbar nav-dash navbar-expand-lg navbar-custom bg-black mt-3 mb-3">
+				<a class="navbar-brand" href="/">WELCOME TO RIFFLE</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse"
 					data-target="#navbarTogglerDemo02"
 					aria-controls="navbarTogglerDemo02" aria-expanded="false"
@@ -34,6 +53,9 @@
 
 				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 					<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+						<li class="nav-item active"><a class="nav-link"
+							href=#>USER <span class="sr-only">(current)</span>
+						</a></li>
 						<li class="nav-item active"><a class="nav-link"
 							href="/songs/new">Add New <span class="sr-only">(current)</span>
 						</a></li>
@@ -54,25 +76,82 @@
 			<div id="carouselExampleControls" class="carousel slide"
 				data-ride="carousel">
 				<div class="carousel-inner slides">
+
+					<!-- first slide -->
+
 					<div class="carousel-item active">
 						<img class="d-block first_slide" height="500"
-							src="/assets/img/samoa.jpg" alt="First slide">
+							src="img/beyonce2.gif" alt="First slide">
 						<div class="carousel-caption d-none d-md-block"></div>
-						<h5>Arist name here</h5>
+						<h5></h5>
 					</div>
+
+					<!-- second slide -->
+
 					<div class="carousel-item">
-						<img class="d-block first_slide" height="500"
-							src="/assets/img/chicago.jpg" alt="Second slide">
+						<img class="d-block w-100 second_slide" height="500"
+							src="img/drake.gif" alt="Second slide">
 						<div class="carousel-caption d-none d-md-block"></div>
-						<h5>New member, Drue surprised friends with a last-minute
-							trip to Chicago!</h5>
+						<h5></h5>
 					</div>
+
+					<!-- third slide -->
+
 					<div class="carousel-item">
 						<img class="d-block w-100 third_slide" height="500"
-							src="/assets/img/new_jersey_pic.jpeg" alt="Third slide">
+							src="img/brunomars.gif" alt="Third slide">
 						<div class="carousel-caption d-none d-md-block"></div>
-						<h5>David C. took a much needed trip home to New Jersey.</h5>
+						<h5></h5>
 					</div>
+
+					<!-- fourth slide -->
+
+					<div class="carousel-item">
+						<img class="d-block w-100 fourth_slide" height="500"
+							src="img/ed.gif" alt="Fourth slide">
+						<div class="carousel-caption d-none d-md-block"></div>
+						<h5></h5>
+					</div>
+
+					<!-- fifth slide -->
+
+					<div class="carousel-item">
+						<img class="d-block w-100 fifth_slide" height="500"
+							src="img/cardib.gif" alt="Fifth slide">
+						<div class="carousel-caption d-none d-md-block"></div>
+						<h5></h5>
+					</div>
+
+					<!-- sixth slide -->
+
+					<div class="carousel-item">
+						<img class="d-block w-100 sixth_slide" height="500"
+							src="img/badbunny.gif" alt="Sixth slide">
+						<div class="carousel-caption d-none d-md-block"></div>
+						<h5></h5>
+					</div>
+
+					<!-- seventh slide -->
+
+					<div class="carousel-item">
+						<img class="d-block w-100 seventh_slide" height="500"
+							src="img/missy.gif" alt="Seventh slide">
+						<div class="carousel-caption d-none d-md-block"></div>
+						<h5></h5>
+					</div>
+
+					<!-- eighth slide -->
+
+					<div class="carousel-item">
+						<img class="d-block w-100 eighth" height="500"
+							src="img/rihanna.gif" alt="Eighth slide">
+						<div class="carousel-caption d-none d-md-block"></div>
+						<h5></h5>
+					</div>
+
+
+
+
 				</div>
 				<a class="carousel-control-prev" href="#carouselExampleControls"
 					role="button" data-slide="prev"> <span
@@ -104,12 +183,27 @@
 							<td scope="row"><c:out value="${song.artist}" /></td>
 							<td scope="row"><c:out value="${song.rating}" /></td>
 							<td>
-								<form action="/songs/${song.id}/delete" method="post">
-									<button class="btn btn-success">Play Song</button>
-									<a class="btn btn-warning" href=#>More from Artist</a> <input
-										type="hidden" name="_method" value="delete"> <input
-										type="submit" class="btn btn-danger" value="Delete" />
-								</form>
+								<div class="btn-group">
+									<a href="/songs/show/${song.id}" class="btn btn-success">Play
+									</a>
+
+									<button class="btn btn-info">Pause</button>
+
+
+									<form action="/search">
+										<input type="submit" value="More" class="btn btn-warning">
+										<input type="hidden" value="${song.artist}" name="search" />
+									</form>
+
+
+									<form action="/songs/${song.id}/delete" method="post">
+										<input type="hidden" name="_method" value="delete"> <input
+											type="submit" class="btn btn-danger" value="Delete" />
+									</form>
+
+
+								</div>
+
 							</td>
 						</tr>
 					</c:forEach>
@@ -117,5 +211,6 @@
 			</table>
 		</div>
 	</div>
+
 </body>
 </html>

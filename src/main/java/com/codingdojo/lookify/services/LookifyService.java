@@ -59,5 +59,9 @@ public class LookifyService {
 	public List<Lookify> findSongsByArtist(String artist) {
 		return lookifyRepository.findByArtistContaining(artist);
 	}
+
+	public List<Lookify> findArtist(String artist) {
+		return lookifyRepository.findByArtist(artist);
+	}
 	
 }

@@ -48,9 +48,42 @@
 
 		<form action="/songs/${Lookify.id}/delete" method="post">
 			<input type="hidden" name="_method" value="delete"> <input
-				type="submit" class="text-danger" value="Delete" />
+				type="submit" class="btn btn-danger" value="Delete from playlist" />
 		</form>
 
 	</div>
+
+	<!-- 	______________________________________________________________________________________ -->
+
+	<!-- Page Content -->
+	<div class="container">
+
+		<!-- Page Heading -->
+		<h1 class="my-4">
+			<c:out value="${Lookify.name}" />
+			<small><c:out value="${Lookify.artist}" /></small>
+		</h1>
+
+		<div class="row">
+			<div class="col-lg-6 mb-4">
+				<div class="card h-100">
+					<a href="#"><img class="card-img-top"
+						src="http://placehold.it/700x400" alt=""></a>
+					<div class="card-body">
+						<h4 class="card-title">
+							<a href="#">Year: Year of Song</a>
+						</h4>
+						<p class="card-text">Maybe some info about this song &/or album and and image above of artist. Perhaps a player?</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- /.row -->
+
+	</div>
+	<!-- /.container -->
+
+
 </body>
 </html>

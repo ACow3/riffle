@@ -6,7 +6,7 @@
 
 
 .first_slide{
-    background-color: blue;
+    background-image: blue;
     background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
@@ -14,10 +14,25 @@
 
 .mastercontainer{
 	background-color: black;
+	height: 100%;
 }
 
 .playlist{
 	color: white;
+}
+
+.artist_page{
+	background-color: black;
+	color: white;
+}
+
+.table_artist_page{
+	color: white;
+}
+
+
+.btn-group{
+	margin: 10px;
 }
 
 /* ________________________________________
