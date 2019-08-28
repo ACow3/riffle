@@ -77,16 +77,13 @@
 			<div class="row align-items-center">
 				<div class="col-lg-6 order-lg-2">
 					<div class="p-5">
-						<img class="img-fluid rounded-circle" src="img/01.jpg" alt="">
+						<img class="img-fluid rounded-circle" src="img/drake.jpg" alt="drake">
 					</div>
 				</div>
 				<div class="col-lg-6 order-lg-1">
 					<div class="p-5">
 						<h2 class="display-4">Hip-Hop & R&B</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Quod aliquid, mollitia odio veniam sit iste esse assumenda amet
-							aperiam exercitationem, ea animi blanditiis recusandae! Ratione
-							voluptatum molestiae adipisci, beatae obcaecati.</p>
+						<p>Developed in inner-city America by African American and Latino Americans, this rhythmic music style and moves the culture forward. From Drake, Cardi B. and Lil Wayne to Daniel Cesar, Khalid and Kehlani. Find the best Hip-Hop & R&B of today.</p>
 					</div>
 				</div>
 			</div>
@@ -98,16 +95,13 @@
 			<div class="row align-items-center">
 				<div class="col-lg-6">
 					<div class="p-5">
-						<img class="img-fluid rounded-circle" src="img/02.jpg" alt="">
+						<img class="img-fluid rounded-circle" src="img/beyonce.jpg" alt="beyonce">
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<div class="p-5">
-						<h2 class="display-4">Pop</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Quod aliquid, mollitia odio veniam sit iste esse assumenda amet
-							aperiam exercitationem, ea animi blanditiis recusandae! Ratione
-							voluptatum molestiae adipisci, beatae obcaecati.</p>
+						<h2 class="display-4">Pop / Top 40</h2>
+						<p>Stream today's most popular songs from atop the charts.</p>
 					</div>
 				</div>
 			</div>
@@ -119,16 +113,13 @@
 			<div class="row align-items-center">
 				<div class="col-lg-6 order-lg-2">
 					<div class="p-5">
-						<img class="img-fluid rounded-circle" src="img/03.jpg" alt="">
+						<img class="img-fluid rounded-circle" src="img/ozuna.jpg" alt="ozuna">
 					</div>
 				</div>
 				<div class="col-lg-6 order-lg-1">
 					<div class="p-5">
-						<h2 class="display-4">Rock & Roll</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Quod aliquid, mollitia odio veniam sit iste esse assumenda amet
-							aperiam exercitationem, ea animi blanditiis recusandae! Ratione
-							voluptatum molestiae adipisci, beatae obcaecati.</p>
+						<h2 class="display-4">Latin</h2>
+						<p>Baila y canta a los todos tus favoritos.</p>
 					</div>
 				</div>
 			</div>
@@ -138,8 +129,7 @@
 	<!-- Footer -->
 	<footer class="py-5 bg-black">
 		<div class="container">
-			<p class="m-0 text-center text-white small">Copyright &copy; Your
-				Website 2019</p>
+			<p class="m-0 text-center text-white small">Copyright &copy; Riffle 2019</p>
 		</div>
 		<!-- /.container -->
 	</footer>

@@ -10,10 +10,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Artist's Page</title>
 </head>
 <body>
 	<div class="container">
+
+		<!-- navigation bar -->
+
 		<nav class="navbar navbar-expand-lg navbar-light bg-white mt-3 mb-3">
 			<a class="navbar-brand" href="#"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -33,7 +36,9 @@
 
 			</div>
 		</nav>
-		<h3>Songs by Artist:</h3>
+
+
+		<h3>Songs by Artist on your playlist:</h3>
 		<div class="topTen">
 			<table class="table">
 				<thead>
@@ -59,6 +64,72 @@
 					</c:forEach>
 				</tbody>
 			</table>
+
+
+			<!-- _________________________________________________________________________________	 -->
+
+			<!-- Header -->
+			<header class="bg-primary text-center py-5 mb-4">
+				<div class="container">
+					<h1 class="font-weight-light text-white">Albums</h1>
+				</div>
+			</header>
+
+
+			<!-- Page Content -->
+			<div class="container">
+				<div class="row">
+					<!-- Team Member 1 -->
+					<div class="col-xl-3 col-md-6 mb-4">
+						<div class="card border-0 shadow">
+							<img src="https://source.unsplash.com/TMgQMXoglsM/500x350"
+								class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title mb-0">Album 1</h5>
+								<div class="card-text text-black-50">Album Year</div>
+							</div>
+						</div>
+					</div>
+					<!-- Team Member 2 -->
+					<div class="col-xl-3 col-md-6 mb-4">
+						<div class="card border-0 shadow">
+							<img src="https://source.unsplash.com/9UVmlIb0wJU/500x350"
+								class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title mb-0">Album 2</h5>
+								<div class="card-text text-black-50">Album Year</div>
+							</div>
+						</div>
+					</div>
+					<!-- Team Member 3 -->
+					<div class="col-xl-3 col-md-6 mb-4">
+						<div class="card border-0 shadow">
+							<img src="https://source.unsplash.com/sNut2MqSmds/500x350"
+								class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title mb-0">Album 3</h5>
+								<div class="card-text text-black-50">Album Year</div>
+							</div>
+						</div>
+					</div>
+					<!-- Team Member 4 -->
+					<div class="col-xl-3 col-md-6 mb-4">
+						<div class="card border-0 shadow">
+							<img src="https://source.unsplash.com/ZI6p3i9SbVU/500x350"
+								class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title mb-0">Album 4</h5>
+								<div class="card-text text-black-50">Album Year</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /.row -->
+
+			</div>
+			<!-- /.container -->
+
+
 		</div>
 	</div>
 </body>

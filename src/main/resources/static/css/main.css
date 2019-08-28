@@ -5,12 +5,19 @@
 }
 
 
-
 .first_slide{
     background-color: blue;
     background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
+}
+
+.mastercontainer{
+	background-color: black;
+}
+
+.playlist{
+	color: white;
 }
 
 /* ________________________________________
@@ -22,7 +29,7 @@
  */
 
 body {
-  font-family: 'Lato';
+  font-family: 'Helvetica';
 }
 
 h1,
@@ -33,6 +40,10 @@ h5,
 h6 {
   font-family: 'Catamaran';
   font-weight: 800 !important;
+}
+
+p {
+	font-family: 'Helvetica';
 }
 
 .btn-xl {

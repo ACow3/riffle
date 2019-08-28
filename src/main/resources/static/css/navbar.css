@@ -4,6 +4,11 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/blob/master/LICENSE)
  */
+ 
+nav-dash{
+	background-color: black;	
+}
+
 body {
 	font-family: Lato
 }
@@ -56,7 +61,7 @@ header.masthead {
 	padding-bottom: 7rem;
 	background: -webkit-gradient(linear, left bottom, left top, from(#ff6a00),
 		to(#ee0979));
-	background: linear-gradient(0deg, #ff6a00 0, #ee0979 100%);
+	background: linear-gradient(0deg, black 0, black 100%);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: scroll;
@@ -82,7 +87,7 @@ header.masthead .bg-circle {
 	border-radius: 100%;
 	background: -webkit-gradient(linear, left bottom, left top, from(#ee0979),
 		to(#ff6a00));
-	background: linear-gradient(0deg, #ee0979 0, #ff6a00 100%)
+	background: linear-gradient(70deg, yellow 0, green 100%)
 }
 
 header.masthead .bg-circle-1 {
@@ -131,13 +136,14 @@ header.masthead .bg-circle-4 {
 }
 
 .btn-primary {
-	background-color: #ee0979;
-	border-color: #ee0979
+	background-color: yellow;
+	border-color: black;
+	color: black;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-	background-color: #bd0760 !important;
-	border-color: #bd0760 !important
+	background-color: green !important;
+	border-color: black !important
 }
 
 .btn-primary:focus {
