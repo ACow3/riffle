@@ -19,11 +19,17 @@
 
 .playlist{
 	color: white;
+	font-size: 18pt;
+	
 }
 
 .artist_page{
 	background-color: black;
 	color: white;
+}
+
+.card-body{
+	color: blue;
 }
 
 .table_artist_page{
@@ -35,6 +41,15 @@
 	margin: 10px;
 }
 
+.mastercontainer{
+	background-color: black;
+	min-height: 1000px;
+	color: white;
+}
+
+.navbar{
+	background-color: black;
+}
 
 /* ________________________________________
  */

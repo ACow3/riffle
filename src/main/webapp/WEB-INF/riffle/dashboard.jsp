@@ -65,7 +65,7 @@
 					</ul>
 					<form action="/search" class="form-inline my-2 my-lg-0">
 						<input class="form-control mr-sm-2" name="search" type="search"
-							placeholder="Search"> <input
+							placeholder="Search" id="search"> <input
 							class="btn btn-outline-success my-2 my-sm-0" type="submit"
 							value="Search Artists">
 					</form>
@@ -172,52 +172,90 @@
 			</div>
 
 			<!-- user's song playlist -->
-
-			<table class="table playlist">
-				<thead>
-					<tr>
-						<th scope="col">Track Name</th>
-						<th scope="col">Artist</th>
-						<th scope="col">Rating</th>
-						<th scope="col">Actions</th>
-					</tr>
-				</thead>
-				<tbody>
-					<c:forEach var="song" items="${Songs}">
+			<div data-spy="scroll" data-offset="0" class="scrollspy">
+				<table class="table playlist">
+					<thead>
 						<tr>
-							<td scope="row"><a href="/songs/show/${song.id}"><c:out
-										value="${song.name}" /></a></td>
-							<td scope="row"><c:out value="${song.artist}" /></td>
-							<td scope="row"><c:out value="${song.rating}" /></td>
-							<td>
-								<div class="btn-group">
-									<a href="/songs/show/${song.id}" class="btn btn-success">Play
-									</a>
-
-									<button class="btn btn-info">Pause</button>
-
-
-									<form action="/search">
-										<input type="submit" value="More" class="btn btn-warning">
-										<input type="hidden" value="${song.artist}" name="search" />
-									</form>
-
-
-									<form action="/songs/${song.id}/delete" method="post">
-										<input type="hidden" name="_method" value="delete"> <input
-											type="submit" class="btn btn-danger" value="Delete" />
-									</form>
-
-
-								</div>
-
-							</td>
+							<th scope="col">Track Name</th>
+							<th scope="col">Artist</th>
+							<th scope="col">Rating</th>
+							<th scope="col">Actions</th>
 						</tr>
-					</c:forEach>
-				</tbody>
-			</table>
+					</thead>
+					<tbody>
+						<c:forEach var="song" items="${Songs}">
+							<tr>
+								<td scope="row"><a href="/songs/show/${song.id}"><c:out
+											value="${song.name}" /></a></td>
+								<td scope="row"><c:out value="${song.artist}" /></td>
+								<td scope="row"><c:out value="${song.rating}" /></td>
+								<td>
+									<div class="btn-group">
+										<a href="/songs/show/${song.id}" class="btn btn-success">Play
+										</a>
+
+										<button class="btn btn-info">Pause</button>
+
+
+										<form action="/search">
+											<input type="submit" value="More" class="btn btn-warning">
+											<input type="hidden" value="${song.artist}" name="search" />
+										</form>
+
+
+										<form action="/songs/${song.id}/delete" method="post">
+											<input type="hidden" name="_method" value="delete"> <input
+												type="submit" class="btn btn-danger" value="Delete" />
+										</form>
+
+
+									</div>
+
+								</td>
+							</tr>
+						</c:forEach>
+					</tbody>
+				</table>
+			</div>
 		</div>
 	</div>
-	</div>
+	
+	<!-- ___________________________________________________ -->
+
+	<!-- Scrollspy test -->
+
+	<nav id="navbar-example2" class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#fat">@fat</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#mdo">@mdo</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#one">one</a>
+        <a class="dropdown-item" href="#two">two</a>
+        <div role="separator" class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#three">three</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+  <h4 id="fat">@fat</h4>
+  <p>...</p>
+  <h4 id="mdo">@mdo</h4>
+  <p>...</p>
+  <h4 id="one">one</h4>
+  <p>...</p>
+  <h4 id="two">two</h4>
+  <p>...</p>
+  <h4 id="three">three</h4>
+  <p>...</p>
+</div>
+	
 </body>
 </html>

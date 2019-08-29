@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+.new-container{
+	background-image: url("/css/musicbrain.jpeg");
+	min-height: 1000px;
+}

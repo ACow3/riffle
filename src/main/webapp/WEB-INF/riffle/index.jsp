@@ -119,7 +119,7 @@
 				<div class="col-lg-6 order-lg-1">
 					<div class="p-5">
 						<h2 class="display-4">Latin y más!</h2>
-						<p>Baila y canta a los todos tus favoritos.</p>
+						<p>From reggaeton and trap to cumbia and banda. Latin music (Portuguese and Spanish: música latina) is more popular worldwide than ever. This genre is used by the music industry as a catch-all term for music that comes from Spanish- and Portuguese-speaking areas of the world, namely Ibero America and the Iberian Peninsula, as well as music sung in either language . Baila y canta a los todos tus favoritos ya ahora.</p>
 					</div>
 				</div>
 			</div>
