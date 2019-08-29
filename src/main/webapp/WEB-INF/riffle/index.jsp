@@ -50,7 +50,7 @@
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item"><a class="nav-link" href="#">Sign Up</a>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="#">Log In</a></li>
+					<li class="nav-item"><a class="nav-link" href="/login">Log In</a></li>
 				</ul>
 			</div>
 		</div>
@@ -118,7 +118,7 @@
 				</div>
 				<div class="col-lg-6 order-lg-1">
 					<div class="p-5">
-						<h2 class="display-4">Latin</h2>
+						<h2 class="display-4">Latin y más!</h2>
 						<p>Baila y canta a los todos tus favoritos.</p>
 					</div>
 				</div>
@@ -137,6 +137,7 @@
 	<!-- Bootstrap core JavaScript -->
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	
 
 </body>
 

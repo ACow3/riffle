@@ -2,15 +2,15 @@
 	pageEncoding="UTF-8"%>
 <%@ page isErrorPage="true"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-	crossorigin="anonymous">
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Show Song</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
 </head>
 <body>
 	<div class="container">
@@ -67,15 +67,23 @@
 		<div class="row">
 			<div class="col-lg-6 mb-4">
 				<div class="card h-100">
+
 					<a href="#"><img class="card-img-top"
 						src="http://placehold.it/700x400" alt=""></a>
+
 					<div class="card-body">
 						<h4 class="card-title">
 							<a href="#">Year: Year of Song</a>
 						</h4>
-						<p class="card-text">Maybe some info about this song &/or album and image above of artist. Perhaps a player?</p>
+						<p class="card-text">Maybe some info about this song &/or
+							album and image above of artist. Perhaps a player?</p>
 					</div>
+
 				</div>
+				<form action="/search">
+					<input type="submit" value="More from Arist" class="btn btn-warning mt-2">
+					<input type="hidden" value="${Lookify.artist}" name="search" />
+				</form>
 			</div>
 
 		</div>

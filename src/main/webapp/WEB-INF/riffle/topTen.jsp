@@ -2,10 +2,6 @@
 	pageEncoding="UTF-8"%>
 <%@ page isErrorPage="true"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-	crossorigin="anonymous">
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,6 +15,12 @@
 	border: 2px solid black;
 }
 </style>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<link rel="stylesheet" href="js/napster.js" type="text/css" />
+<link rel="stylesheet" href="css/napster.css" type="text/css" />
 </head>
 <body>
 	<div class="container">
@@ -42,7 +44,7 @@
 			</div>
 		</nav>
 		<div class="container">
-			<h3>Top Ten Songs:</h3>
+			<h3>Your Top Ten Songs:</h3>
 			<div class="topTen">
 				<table class="table">
 					<thead>
@@ -64,6 +66,38 @@
 					</tbody>
 				</table>
 			</div>
+
+			<div class="popularSongs">
+			
+				<!-- ///// Napster HTML ///// -->
+
+				<script id="tracks-template" type="text/x-handlebars-template">
+
+<div class="tracks-container">
+  <div class="logo">
+    Top Tracks
+  </div>
+ 
+  <div id="tracks-container"></div>
+</div>
+  {{#each tracks}}
+  <div data-track-id="{{id}}" style="background-image:url(http://direct.rhapsody.com/imageserver/v2/albums/{{albumId}}/images/300x300.jpg)" class="cover">
+  <div class=content-name>{{name}}</div>
+  <audio controls class= "audio">
+    <source src="{{previewURL}}" type="audio/mpeg">
+  </audio>
+  </div>
+  {{/each}}
+
+					</script>
+
+
+				<!-- ///// Napster HTML ///// -->
+
+
+
+			</div>
+
 		</div>
 	</div>
 </body>

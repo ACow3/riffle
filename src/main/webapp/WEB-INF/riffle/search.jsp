@@ -2,15 +2,15 @@
 	pageEncoding="UTF-8"%>
 <%@ page isErrorPage="true"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-	crossorigin="anonymous">
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Artist's Page</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
 <link href="/css/main.css" rel="stylesheet">
 </head>
 <body>
@@ -73,7 +73,7 @@
 				<!-- Header -->
 				<header class="bg-success text-center py-5 mb-4">
 					<div class="container">
-						<h1 class="font-weight-light text-white">Albums by ${artist}</h1>
+						<h1 class="display-1 font-weight-light text-white">Albums by ${artist}</h1>
 					</div>
 				</header>
 

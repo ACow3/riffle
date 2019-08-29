@@ -26,22 +26,27 @@ public class LookifyController {
 
 	@GetMapping("/")
 	public String home() {
-		return "lookify/index.jsp";
+		return "riffle/index.jsp";
 	}
 
+	@GetMapping("/login")
+	public String login() {
+		return "login.jsp";
+	}
+	
 	// show all songs
 	@GetMapping("/dashboard")
 	public String dashboard(Model model) {
 		List<Lookify> allSongs = lookifyService.getAllSongs();
 		model.addAttribute("Songs", allSongs);
-		return "lookify/dashboard.jsp";
+		return "riffle/dashboard.jsp";
 	}
 
 	// render page to create new song
 	@GetMapping("/songs/new")
 	public String newSong(Model model) {
 		model.addAttribute("song", new Lookify());
-		return "lookify/new.jsp";
+		return "riffle/new.jsp";
 	}
 	
 	// processes new song
@@ -49,7 +54,7 @@ public class LookifyController {
 	public String createSong(@Valid @ModelAttribute("song") Lookify lookify, BindingResult result) {
 		System.out.println("Checking if this works.");
 		if( result.hasErrors() ) {
-			return "lookify/new.jsp";
+			return "riffle/new.jsp";
 		}
 		lookifyService.createSong(lookify);
 		return "redirect:/dashboard";
@@ -60,7 +65,7 @@ public class LookifyController {
 	public String show(@PathVariable("id") Long id, Model model) {
 		Lookify song = lookifyService.getOneSong(id);
 		model.addAttribute("Lookify", song);
-		return "lookify/show.jsp";
+		return "riffle/show.jsp";
 	}
 	
 	// delete song
@@ -75,7 +80,7 @@ public class LookifyController {
 	public String topTen(Model model) {
 		List<Lookify> topSongs = lookifyService.getTopSongs();
 		model.addAttribute("topSongs", topSongs);
-		return "lookify/topTen.jsp";
+		return "riffle/topTen.jsp";
 	}
 	
 	// renders artist search page
@@ -84,7 +89,7 @@ public class LookifyController {
 		List<Lookify> artistSongs = lookifyService.findSongsByArtist(artist);		
 		model.addAttribute("artistSongs", artistSongs);
 		model.addAttribute("artist", artist);
-		return "lookify/search.jsp";
+		return "riffle/search.jsp";
 	}
 	
 	

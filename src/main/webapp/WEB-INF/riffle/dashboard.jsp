@@ -36,6 +36,7 @@
 </script>
 </head>
 <body>
+
 	<div class="mastercontainer">
 		<div class="container dashboard">
 
@@ -53,8 +54,8 @@
 
 				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 					<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-						<li class="nav-item active"><a class="nav-link"
-							href=#>USER <span class="sr-only">(current)</span>
+						<li class="nav-item active"><a class="nav-link" href=#>USER
+								<span class="sr-only">(current)</span>
 						</a></li>
 						<li class="nav-item active"><a class="nav-link"
 							href="/songs/new">Add New <span class="sr-only">(current)</span>
@@ -70,6 +71,12 @@
 					</form>
 				</div>
 			</nav>
+		</div>
+		<div class="container">
+
+
+
+
 
 			<!-- artist carousel -->
 
@@ -211,6 +218,6 @@
 			</table>
 		</div>
 	</div>
-
+	</div>
 </body>
 </html>
