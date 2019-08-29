@@ -53,7 +53,7 @@
 					<img class="d-block first_slide" height="500"
 						src="/assets/img/samoa.jpg" alt="First slide">
 					<div class="carousel-caption d-none d-md-block"></div>
-					<h5>Arist name here</h5>
+					<h5>Artist name here</h5>
 				</div>
 				<div class="carousel-item">
 					<img class="d-block first_slide" height="500"

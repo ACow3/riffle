@@ -50,7 +50,7 @@
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item"><a class="nav-link" href="#">Sign Up</a>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="#">Log In</a></li>
+					<li class="nav-item"><a class="nav-link" href="/login">Log In</a></li>
 				</ul>
 			</div>
 		</div>
@@ -147,6 +147,7 @@
 	<!-- Bootstrap core JavaScript -->
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	
 
 </body>
 
