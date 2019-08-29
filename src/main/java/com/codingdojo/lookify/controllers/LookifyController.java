@@ -29,6 +29,10 @@ public class LookifyController {
 		return "lookify/index.jsp";
 	}
 
+	@GetMapping("/login")
+	public String login() {
+		return "lookify/login.jsp";
+	}
 	// show all songs
 	@GetMapping("/dashboard")
 	public String dashboard(Model model) {
